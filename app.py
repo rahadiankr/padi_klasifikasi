@@ -7,7 +7,7 @@ from tensorflow import keras
 model = keras.models.load_model('converted_keras/keras_model.h5')
 
 # Load labels
-labels = open('converted_keras\labels.txt', 'r')
+labels = open('converted_keras\labels.txt')
 labels = labels.read().split('\n')
 
 # Input image
