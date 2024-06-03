@@ -4,17 +4,10 @@ import numpy as np
 # Load h5 model 
 import tensorflow as tf
 from tensorflow import keras
-<<<<<<< HEAD
 model = keras.models.load_model('keras_model.h5')
 
 # Load labels
 labels = open('labels.txt', 'r')
-=======
-model = keras.models.load_model('/converted_keras/keras_model.h5')
-
-# Load labels
-labels = open('/converted_keras\labels.txt', 'r')
->>>>>>> 003cc1f6353e0e7f4c3054418cbc6d76b334b60f
 labels = labels.read().split('\n')
 
 # Input image
